@@ -1,0 +1,39 @@
+body{
+font-family:'Times New Roman', Times, serif;
+background: rgb(197, 106, 90);
+text-align:center;
+margin:0;
+background-image:url(https://static.vecteezy.com/system/resources/previews/067/948/895/large_2x/hyena-walking-through-golden-grasslands-at-sunrise-in-africa-free-photo.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#222;
+    padding:15px 40px;
+}
+
+.logo{
+    color:white;
+    font-size:20px;
+    font-weight:bold;
+}  
+
+nav{
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-size:16px;
+    transition:0.3s;
+}
+nav a:hover{
+    color:#f4a261;
+}

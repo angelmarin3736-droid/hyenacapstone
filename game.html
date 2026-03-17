@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stick Game</title>
+    <link rel="stylesheet" href="game.css">
+    
+</head>
+<body>
+    <header>
+    <div class="logo">A hyena game</div>
+    <nav>
+        <a href="about.html">About</a>
+        <a href="species.html">Species</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="quiz.html">Quiz</a>
+    </nav>
+</header>
+     
+    <h1>Hyena game</h1>
+    <h2>Can You Fight for the last piece of meat?</h2>
+    <div class="container">
+        <div class="box" id="gameBox">
+            <p>Instructions: Take turns removing 1 or 2 sticks from the pile. The player forced to take the last stick loses!</p>
+        <button onclick="startGame()">Start Game</button>
+        <button onclick="takeStick(1)">eat 1 meat</button>
+        <button onclick="takeStick(2)">eat 2 meat</button>
+        <div id="meatPile"></div>
+
+        </div>
+    </div>
+    <div class="log" id="log">
+    <p class="label act" id="logtext">waiting....</p>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
