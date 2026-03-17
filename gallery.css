@@ -1,83 +1,98 @@
- body{
-    font-family:monospace;
-    background: linear-gradient(154deg,#616a63,#b9631c);
-    color:rgb(209, 200, 200);
-    text-align:center;
-    margin:0;
-}
 
-h1{
-    font-size: 40px;
-    margin-top: 30px;
-}
 
-.container{
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-}
-
-.box{
-    background: brown;
-    padding: 40px;
-    border-radius: 15px;
-    width: 400px;
-    box-shadow: 0 10px 25px  rgb(154, 116, 75);
-}
-
-button{
-    padding: 12px 20px;
-    margin: 20px;
-}
-
-button:hover{
-    transform: scale(1.05);
-
-}
-button:active{
-    transform: scale(0.85);
-}
-
-button:nth-child(2){
-    background: #cd9316;
-    color: rgb(255, 10, 88);
-}
-
- button:nth-child(3){
-    background: #cd9316;
-    color: white;
-}
- button:nth-child(4){
-    background: #cd9316;
-    color: white;
+body{
+background:#aeaac7;
+color:white;
 }
 
 
 header{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    background:#080808;
-    padding:15px 30px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:10px 20px;
+background:#cd8328;
 }
 
 .logo{
-    color:rgb(14, 224, 210);
-    font-size:20px;
-    font-weight:bold;
-}  
-
-nav{
-    display:flex;
-    gap:25px;
+font-size:22px;
+font-weight:bold;
+text-transform:uppercase;
 }
 
 nav a{
-    color:rgb(117, 43, 191);
-    text-decoration:none;
-    font-size:16px;
-    transition:0.3s;
+color:rgb(231, 227, 223);
+text-decoration:none;
+margin-left:5px;
+font-size:16px;
+transition:0.3s;
 }
+
 nav a:hover{
-    color:#f4a261;
+color:deepskyblue;
+}
+
+
+.hyena{
+text-align:center;
+padding:60px 20px;
+}
+
+.hyena h1{
+font-size:42px;
+margin-bottom:10px;
+}
+
+.hyena p{
+font-size:18px;
+color:#575640;
+}
+
+
+.content-section{
+display:flex;
+justify-content:center;
+align-items:center;
+padding:40px;
+}
+
+.image img{
+width:400px;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,0.6);
+}
+
+
+h2{
+text-align:center;
+margin-top:40px;
+margin-bottom:20px;
+font-size:28px;
+}
+
+
+.gallery-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+gap:25px;
+padding:40px;
+max-width:1100px;
+margin:auto;
+}
+
+
+.gallery-grid img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:12px;
+transition:0.4s;
+box-shadow:0 6px 20px rgba(0,0,0,0.5);
+cursor:pointer;
+}
+
+
+.gallery-grid img:hover{
+transform:scale(1.05);
+box-shadow:0 12px 30px rgba(211, 24, 24, 0.8);
 }
